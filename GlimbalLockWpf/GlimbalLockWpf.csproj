@@ -1,0 +1,362 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>GlimbalLockWpf.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="6.0.0" />
+    <PackageReference Include="OxyPlot.Wpf" Version="2.1.0" />
+    <PackageReference Include="System.Diagnostics.Process" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Glimbal Lock.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\app.info">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\boot.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\globalgamemanagers">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\globalgamemanagers.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\level0">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\level0.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\Assembly-CSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\Model.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\Mono.Posix.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\Mono.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\mscorlib.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\System.Configuration.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\System.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\System.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\System.Security.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\System.Xaml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\System.Xml.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\Unity.TextMeshPro.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\Unity.Timeline.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.AccessibilityModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.AIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.AndroidJNIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.AnimationModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ARModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.AssetBundleModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.AudioModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ClothModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ClusterInputModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ClusterRendererModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.CoreModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.CrashReportingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.DirectorModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.DSPGraphModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.GameCenterModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.GIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.GridModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.HotReloadModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ImageConversionModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.IMGUIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.InputLegacyModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.InputModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.JSONSerializeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.LocalizationModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ParticleSystemModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.PerformanceReportingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.Physics2DModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.PhysicsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ProfilerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.ScreenCaptureModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.SharedInternalsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.SpriteMaskModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.SpriteShapeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.StreamingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.SubstanceModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.SubsystemsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.TerrainModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.TerrainPhysicsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.TextCoreModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.TextRenderingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.TilemapModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.TLSModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UI.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UIElementsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UIElementsNativeModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UIModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UmbraModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UNETModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityAnalyticsModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityConnectModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityCurlModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityTestProtocolModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityWebRequestAudioModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityWebRequestModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityWebRequestTextureModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.VehiclesModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.VFXModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.VideoModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.VirtualTexturingModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.VRModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.WindModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\UnityEngine.XRModule.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\Managed\WindowsBase.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\RuntimeInitializeOnLoads.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\ScriptingAssemblies.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\sharedassets0.assets">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\Glimbal Lock_Data\sharedassets0.assets.resS">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\EmbedRuntime\mono-2.0-bdwgc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\EmbedRuntime\MonoPosixHelper.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\2.0\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\2.0\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\2.0\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\2.0\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\2.0\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.0\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.0\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.0\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.0\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.0\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.5\Browsers\Compat.browser">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.5\DefaultWsdlHelpGenerator.aspx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.5\machine.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.5\settings.map">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\4.5\web.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\browscap.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\MonoBleedingEdge\etc\mono\mconfig\config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\UnityCrashHandler64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="UnityObjects\UnityPlayer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
